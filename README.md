@@ -1,3 +1,7 @@
+# Styled MailChimp Newsletter Form 
+In order to send your mailchimp account the data you should pass the form action part of the embedded forms in the Mailchimp account.  
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
