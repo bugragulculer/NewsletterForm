@@ -1,8 +1,12 @@
-import './App.css';
-import NewsletterForm from './NewsletterForm'
+import Mailchimp from './Mailchimp';
+import Revue from './Revue';
+
 function App() {
   return (
-    <NewsletterForm />
+    <>
+      <Mailchimp />
+      <Revue />
+    </>
   );
 }
 

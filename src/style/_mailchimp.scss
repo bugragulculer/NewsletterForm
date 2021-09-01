@@ -1,0 +1,123 @@
+.mailchimp {
+  background-color: #eee;
+  border: solid;  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-color: #ddd;
+  border-width: 2px;
+  border-radius: 10px;
+  margin: 0 5%;
+  padding: 80px 0px;
+  h2 {
+    color: #242424;
+    margin: 0px;
+    font-size: 30px;
+    padding: 0 40px;
+    text-align: center;
+  }
+  h3 {
+    color: #242424;
+    margin: 20px;
+    padding: 0 50px;
+    max-width: 500px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: start;
+    margin-bottom: 10px;
+    color: #555;
+    padding: 0 10px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .action__button {
+      font-size: 15px;
+      border-style: none;
+      border-radius: 10px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 4px 4px 6px #cfcfcf, -4px -4px 6px #f2f2f2;
+      margin-top: 20px;
+      width: 20vw;
+      max-width: 750px;
+      transition: all 0.4s ease-out;
+      padding: 15px;
+      background-color: darkred;
+      
+      &:hover {
+        box-shadow: 6px 6px 10px #cfcfcf, -6px -6px 10px #f2f2f2;
+        transform: scale(1.02);
+        transition: all 0.4s ease-out;
+      }
+      &:active {
+        box-shadow: 1px 1px 1px #cfcfcf, -1px -1px 1px #f2f2f2;
+        transform: scale(0.98);
+        transition: all 0.4s ease-out;
+        border-style: none;
+        border-width: 0px;
+      }
+      &:focus {
+        box-shadow: 1px 1px 1px #fff, -1px -1px 1px #ccc;
+        transform: scale(0.98);
+        transition: all 0.4s ease-out;
+        outline: none;
+      }
+    }
+    label {
+      input {
+        height: 40px;
+        border-style: none;
+        border-radius: 10px;
+        text-align: start;
+        background-color: transparent;
+        color: #242424;
+        box-shadow: -1px -1px 2px #ccc, 1px 1px 2px #fff;
+        width: 30vw;
+        max-width: 750px;
+        padding: 0 20px;
+        margin: 0;
+        &:focus {
+          transition: all 0.4s ease-in;
+          border-style: none;
+          border-width: 0px;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .input {
+    width: 50vw;
+    max-width: 750px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .input {
+    width: 70vw;
+    max-width: 750px;
+  }
+  .action__button {
+    font-size: 15px;
+    border-style: none;
+    border-radius: 50px;
+    text-align: center;
+    color: #242424;
+    box-shadow: 4px 4px 6px #ccc, -4px -4px 6px #fff;
+    margin-top: 20px;
+    width: 40vw;
+    max-width: 750px;
+    transition: all 0.4s ease-out;
+    padding: 15px;
+  }
+}
